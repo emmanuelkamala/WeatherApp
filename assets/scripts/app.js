@@ -1,5 +1,9 @@
-const weather = new Weather('Boston');
-const ui = new UI;
+const storage = new Storage();
+const weatherLocation = storage.getLocationData();
+
+
+const weather = new Weather(weatherLocation.city);
+const ui = new UI();
 
 
 document.getElementById('w-change-btn').addEventListener('click', (e) => {
