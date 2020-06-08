@@ -12,7 +12,7 @@ class Storage {
         }
 
         return {
-            city: this.city;
+            city: this.city
         }
     }
 

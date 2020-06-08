@@ -20,6 +20,5 @@ class UI {
         this.feelsLike.textContent = `Feels like: ${weather.main.feels_like}`;
         this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
         this.wind.textContent = `Wind: ${weather.wind.deg}`;
-        
     }
 }
