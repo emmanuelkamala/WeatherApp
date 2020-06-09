@@ -1,0 +1,28 @@
+{
+  "name": "WeatherApp",
+  "version": "1.0.0",
+  "description": "It`s an app for checking temperatures in different cities in the world. Weather details like actual city temperature in celcius are obtained using an API from Open Weather Map website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelkamala/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuelkamala/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/emmanuelkamala/WeatherApp#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
