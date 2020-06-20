@@ -2,14 +2,16 @@
 
  It`s an app for checking temperatures in different cities in the world. Weather details like actual city temperature in celcius are obtained using an API from Open Weather Map website.
 
-![screenshot](./assets/images/weather.png)
+![screenshot](./src/assets/images/weather.png)
 
 
 ## Built With
 
 - HTML
 - CSS
-- java script
+- Javascript
+- Webpack
+- Bootstrap 4
 
 ## Live Version
 
@@ -23,6 +25,12 @@ Open your terminal or text editor and use next command
   git clone https://github.com/emmanuelkamala/weatherapp.git
 
   cd WeatherApp
+
+  Run: 'npm install', to install all the dependencies
+
+  Run: 'npm run dev', to compile the files, and start localserver
+
+  visit: localhost:8080 on the browser
 
 After if you want to do any changes please create new branch, after changes open pull request.
 Happy coding! 
