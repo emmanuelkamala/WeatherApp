@@ -14,14 +14,22 @@ document.getElementById('w-change-btn').addEventListener('click', (e) => {
     storage.setLocationData(city);
     getWeather();
     $('#locModal').modal('hide');
+    document.getElementById('w-string').textContent === document.getElementById('w-string-two').textContent ;
 })
 
+
 document.addEventListener('DOMContentLoaded', getWeather);
+
+document.getElementById('weather-change').addEventListener('click', () => {
+    let w = document.getElementById('weather-change').textContent;
+    ui.changeWeather(w.slice(16));
+    document.getElementById('w-string-two').style.display = 'none';
+})
 
 function getWeather() {
     weather.getWeather()
     .then(results => {
         ui.paint(results);
     })
-    .catch(err => console.log(err));
+    .catch(err => alert(err));
 }

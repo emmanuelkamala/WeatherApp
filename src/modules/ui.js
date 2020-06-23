@@ -15,14 +15,27 @@ class UI {
     paint(weather) {
         this.location.textContent = weather.name;
         this.desc.textContent = weather.weather[0].description;
-        this.string.textContent = `${(weather.main.temp - 273.15).toFixed(2)} °C`;
-        this.stringTwo.textContent = `${(((weather.main.temp - 273.15) * 9/5) + 32).toFixed(2)} °F`;
+        this.stringTwo.textContent = `${(weather.main.temp - 273.15).toFixed(2)}`;
         this.icon.setAttribute('src', "https://openweathermap.org/img/w/" + weather.weather[0].icon + ".png");
         this.humidity.textContent = `Relative humidity: ${weather.main.humidity}`;
         this.feelsLike.textContent = `Feels like: ${weather.main.feels_like}`;
         this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
         this.wind.textContent = `Wind: ${weather.wind.deg}`;
     } 
+
+    changeWeather(t) {
+        let cent = this.stringTwo.textContent;
+        let fahr = cent * 9/5 + 32;
+        let x = document.getElementById("w-string");
+           
+            if (t === 'Fahrenheit') {  
+                x.textContent = `${fahr}`;  
+                document.getElementById('weather-change').textContent = 'Change temp. to Celsius';
+            } else {
+               x.textContent = `${cent}`;
+               document.getElementById('weather-change').textContent = 'Change temp. to Fahrenheit';
+            }
+    }
 }
 
 export default UI;

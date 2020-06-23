@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
-    <link rel="stylesheet" href="src/assets/styles/main.css" />
+    <link rel="stylesheet" href="../src/assets/styles/main.css" />
     <title>Weather App</title>
 </head>
 <body>
@@ -16,6 +16,7 @@
                 <div class="weather-unit">
                   <h3 id="w-string"></h3>
                   <h3 id="w-string-two"></h3>
+                  <button class="btn btn-info" id="weather-change">Change temp. to Fahrenheit</button>
                 </div>
                 
                 <img id="w-icon">
@@ -46,7 +47,7 @@
               <form id="w-form">
                   <div class="form-group">
                       <label for="city">City</label>
-                      <input type="text" id="city" class="form-control">
+                      <input type="text" id="city" class="form-control" onClick="this.form.reset()" >
                   </div>
               </form>
             </div>
