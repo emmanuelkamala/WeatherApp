@@ -37,7 +37,7 @@ Happy coding!
 
 
 
-## Authors
+## Author
 
 👤 **Author1**
 
