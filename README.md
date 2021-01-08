@@ -58,5 +58,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The odin project
-- Bootstrap free framework
 - Microverse tips
