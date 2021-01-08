@@ -26,11 +26,11 @@ Open your terminal or text editor and use next command
 
   cd WeatherApp
 
-  Run: 'npm install', to install all the dependencies
+  ### Run: 'npm install', to install all the dependencies
 
-  Run: 'npm run dev', to compile the files, and start localserver
+  ### Run: 'npm run dev', to compile the files, and start localserver
 
-  visit: localhost:8080 on the browser
+  ### visit: localhost:8080 on the browser
 
 After if you want to do any changes please create new branch, after changes open pull request.
 Happy coding! 
